@@ -1,14 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>News Blog</title>
-  <meta name="description" content="Breaking news, crypto, and tech trends.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crypto News Blog</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #1e1e2f;
+      color: white;
+      padding: 20px 40px;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      background: #2c2c3e;
+      padding: 10px 40px;
+    }
+    nav a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .featured-image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .post-title {
+      font-size: 28px;
+      color: #c0392b;
+      margin-top: 20px;
+    }
+    .post-meta {
+      color: #777;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .post-content p {
+      line-height: 1.8;
+    }
+    .tags {
+      margin-top: 30px;
+    }
+    .tags span {
+      background: #f1c40f;
+      color: black;
+      padding: 6px 12px;
+      border-radius: 16px;
+      margin-right: 8px;
+      font-size: 14px;
+      display: inline-block;
+    }
+    .category-nav {
+      margin: 20px 0;
+    }
+    .category-nav button {
+      padding: 8px 16px;
+      margin-right: 10px;
+      border: none;
+      background: #3498db;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .category-nav button:hover {
+      background: #2980b9;
+    }
+    footer {
+      background: #ddd;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-  <h1>📢 Welcome to My News Blog</h1>
-  <h3>🔥 Trending Now: Bitcoin Hits $100K</h3>
-  <p>We bring you the latest news in technology, finance, and cryptocurrency.</p>
-  <footer>© 2025 MySite</footer>
+  <header>
+    <h1>📢 Crypto News Blog</h1>
+  </header>
+  
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Tech</a>
+    <a href="#">Finance</a>
+    <a href="#">Crypto</a>
+    <a href="#">Web3</a>
+    <a href="#">About</a>
+  </nav>
+
+  <div class="container">
+    <div class="category-nav">
+      <button>🔍 Latest News</button>
+      <button>💰 Investing</button>
+      <button>🌐 Blockchain</button>
+      <button>🖼️ NFT</button>
+    </div>
+
+    <img src="https://i.imgur.com/IXdH0yb.jpg" class="featured-image" alt="Featured Image">
+    <h2 class="post-title">🚀 Bitcoin Breaks $100,000 Barrier</h2>
+    <div class="post-meta">Published: July 18, 2025 | Category: Crypto | Author: Admin</div>
+
+    <div class="post-content">
+      <p>Bitcoin (BTC) has surged past the long-anticipated $100,000 mark. The market celebrates this all-time high as global interest in digital assets reaches a fever pitch. Experts cite institutional adoption, scarcity, and growing inflation concerns as primary drivers.</p>
+      <p>Leading analysts predict even higher gains ahead, while others caution that volatility remains a concern. Investors are advised to maintain a balanced portfolio and stay updated on market trends.</p>
+      <p>Explore our latest guides on how to diversify using DeFi, yield farming, and staking platforms.</p>
+    </div>
+
+    <div class="tags">
+      <span>#Bitcoin</span>
+      <span>#Crypto</span>
+      <span>#Investment</span>
+      <span>#News</span>
+      <span>#Web3</span>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 CryptoNews Blog | Built with ❤️ and GitHub Pages
+  </footer>
 </body>
 </html>
