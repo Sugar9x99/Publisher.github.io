@@ -29,6 +29,9 @@
       text-decoration: none;
       font-weight: bold;
     }
+    nav a:hover {
+      text-decoration: underline;
+    }
     .container {
       max-width: 1000px;
       margin: 30px auto;
@@ -70,17 +73,27 @@
     .category-nav {
       margin: 20px 0;
     }
-    .category-nav button {
+    .category-nav a {
+      display: inline-block;
       padding: 8px 16px;
       margin-right: 10px;
-      border: none;
       background: #3498db;
       color: white;
       border-radius: 4px;
-      cursor: pointer;
+      text-decoration: none;
     }
-    .category-nav button:hover {
+    .category-nav a:hover {
       background: #2980b9;
+    }
+    section {
+      margin-top: 50px;
+    }
+    section h2 {
+      color: #2c3e50;
+    }
+    section p {
+      text-align: justify;
+      line-height: 1.7;
     }
     footer {
       background: #ddd;
@@ -94,41 +107,73 @@
   <header>
     <h1>📢 Crypto News Blog</h1>
   </header>
-  
+
   <nav>
-    <a href="#">Home</a>
-    <a href="#">Tech</a>
-    <a href="#">Finance</a>
-    <a href="#">Crypto</a>
-    <a href="#">Web3</a>
-    <a href="#">About</a>
+    <a href="#home">Home</a>
+    <a href="#tech">Tech</a>
+    <a href="#finance">Finance</a>
+    <a href="#crypto">Crypto</a>
+    <a href="#web3">Web3</a>
+    <a href="#about">About</a>
   </nav>
 
   <div class="container">
     <div class="category-nav">
-      <button>🔍 Latest News</button>
-      <button>💰 Investing</button>
-      <button>🌐 Blockchain</button>
-      <button>🖼️ NFT</button>
+      <a href="#latest">🔍 Latest News</a>
+      <a href="#investing">💰 Investing</a>
+      <a href="#blockchain">🌐 Blockchain</a>
+      <a href="#nft">🖼️ NFT</a>
     </div>
 
-    <img src="https://i.imgur.com/IXdH0yb.jpg" class="featured-image" alt="Featured Image">
-    <h2 class="post-title">🚀 Bitcoin Breaks $100,000 Barrier</h2>
-    <div class="post-meta">Published: July 18, 2025 | Category: Crypto | Author: Admin</div>
+    <section id="home">
+      <h2>Home</h2>
+      <p>Welcome to Crypto News Blog – your daily source for the most accurate and up-to-date information in the crypto space. From market trends to insider insights, we deliver professional coverage and deep analysis to help investors and enthusiasts navigate this fast-paced world.</p>
+    </section>
 
-    <div class="post-content">
-      <p>Bitcoin (BTC) has surged past the long-anticipated $100,000 mark. The market celebrates this all-time high as global interest in digital assets reaches a fever pitch. Experts cite institutional adoption, scarcity, and growing inflation concerns as primary drivers.</p>
-      <p>Leading analysts predict even higher gains ahead, while others caution that volatility remains a concern. Investors are advised to maintain a balanced portfolio and stay updated on market trends.</p>
-      <p>Explore our latest guides on how to diversify using DeFi, yield farming, and staking platforms.</p>
-    </div>
+    <section id="tech">
+      <h2>Tech</h2>
+      <p>The blockchain space is evolving at lightning speed. We cover the latest in crypto wallets, decentralized protocols, zero-knowledge proofs, smart contract security, and emerging tools driving the development of decentralized apps (dApps). Discover the tools that power the future of tech.</p>
+    </section>
 
-    <div class="tags">
-      <span>#Bitcoin</span>
-      <span>#Crypto</span>
-      <span>#Investment</span>
-      <span>#News</span>
-      <span>#Web3</span>
-    </div>
+    <section id="finance">
+      <h2>Finance</h2>
+      <p>With the rise of DeFi (Decentralized Finance), the world of investing is transforming. Explore how yield farming, staking, algorithmic stablecoins, and decentralized exchanges are replacing traditional banks. We cover how to earn passive income through liquidity mining and cross-chain protocols.</p>
+    </section>
+
+    <section id="crypto">
+      <h2>Crypto</h2>
+      <p>Get in-depth reviews and expert commentary on the latest coins and tokens. From Bitcoin to obscure altcoins, we analyze tokenomics, governance models, and long-term value potential. Learn what’s hot, what’s hype, and what to watch out for in today’s volatile market.</p>
+    </section>
+
+    <section id="web3">
+      <h2>Web3</h2>
+      <p>Web3 is redefining ownership and identity. Learn how wallets like MetaMask empower users, how DAOs (Decentralized Autonomous Organizations) are reshaping governance, and how creators monetize content through tokenized experiences. Explore the tech stack of tomorrow’s decentralized web.</p>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>Crypto News Blog was founded by a team of passionate developers, traders, and journalists to share unbiased, educational, and actionable crypto content. We believe in transparency, independence, and the power of community to shape the future of finance.</p>
+    </section>
+
+    <section id="latest">
+      <h2>🔍 Latest News</h2>
+      <p>Stay updated with breaking headlines, regulatory changes, and the latest funding rounds in crypto. We provide real-time coverage of hacks, partnerships, and token launches so you can make informed decisions fast. Our editorial team scans the blockchain 24/7 for the most relevant news.</p>
+    </section>
+
+    <section id="investing">
+      <h2>💰 Investing</h2>
+      <p>Crypto investing requires strategy and discipline. Learn how to build diversified portfolios, time the market cycles, and analyze charts using technical indicators like RSI, MACD, and Fibonacci retracements. Understand risk management and avoid emotional trading traps.</p>
+    </section>
+
+    <section id="blockchain">
+      <h2>🌐 Blockchain</h2>
+      <p>Blockchain is more than just crypto. We explore use cases in supply chains, voting systems, real estate, and digital identity. Learn about Layer 1 vs Layer 2 solutions, sidechains, sharding, and how scaling solutions like Optimism and Arbitrum improve Ethereum’s performance.</p>
+    </section>
+
+    <section id="nft">
+      <h2>🖼️ NFT</h2>
+      <p>Non-fungible tokens are revolutionizing art, gaming, and digital ownership. Discover top NFT marketplaces like OpenSea and Blur, explore blue-chip projects, and learn how NFT royalties empower creators. We also cover metaverse integrations and the legal side of digital assets.</p>
+    </section>
   </div>
 
   <footer>
