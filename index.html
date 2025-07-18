@@ -28,6 +28,7 @@
       margin-right: 20px;
       text-decoration: none;
       font-weight: bold;
+      cursor: pointer;
     }
     nav a:hover {
       text-decoration: underline;
@@ -38,37 +39,6 @@
       background: white;
       padding: 20px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .featured-image {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-    .post-title {
-      font-size: 28px;
-      color: #c0392b;
-      margin-top: 20px;
-    }
-    .post-meta {
-      color: #777;
-      font-size: 14px;
-      margin-bottom: 10px;
-    }
-    .post-content p {
-      line-height: 1.8;
-    }
-    .tags {
-      margin-top: 30px;
-    }
-    .tags span {
-      background: #f1c40f;
-      color: black;
-      padding: 6px 12px;
-      border-radius: 16px;
-      margin-right: 8px;
-      font-size: 14px;
-      display: inline-block;
     }
     .category-nav {
       margin: 20px 0;
@@ -81,12 +51,17 @@
       color: white;
       border-radius: 4px;
       text-decoration: none;
+      cursor: pointer;
     }
     .category-nav a:hover {
       background: #2980b9;
     }
     section {
       margin-top: 50px;
+      display: none;
+    }
+    section.active {
+      display: block;
     }
     section h2 {
       color: #2c3e50;
@@ -109,75 +84,75 @@
   </header>
 
   <nav>
-    <a href="#home">Home</a>
-    <a href="#tech">Tech</a>
-    <a href="#finance">Finance</a>
-    <a href="#crypto">Crypto</a>
-    <a href="#web3">Web3</a>
-    <a href="#about">About</a>
+    <a onclick="showSection('home')">Home</a>
+    <a onclick="showSection('tech')">Tech</a>
+    <a onclick="showSection('finance')">Finance</a>
+    <a onclick="showSection('crypto')">Crypto</a>
+    <a onclick="showSection('web3')">Web3</a>
+    <a onclick="showSection('about')">About</a>
   </nav>
 
   <div class="container">
     <div class="category-nav">
-      <a href="#latest">🔍 Latest News</a>
-      <a href="#investing">💰 Investing</a>
-      <a href="#blockchain">🌐 Blockchain</a>
-      <a href="#nft">🖼️ NFT</a>
+      <a onclick="showSection('latest')">🔍 Latest News</a>
+      <a onclick="showSection('investing')">💰 Investing</a>
+      <a onclick="showSection('blockchain')">🌐 Blockchain</a>
+      <a onclick="showSection('nft')">🖼️ NFT</a>
     </div>
 
-    <section id="home">
+    <section id="home" class="active">
       <h2>Home</h2>
-      <p>Welcome to Crypto News Blog – your daily source for the most accurate and up-to-date information in the crypto space. From market trends to insider insights, we deliver professional coverage and deep analysis to help investors and enthusiasts navigate this fast-paced world.</p>
+      <p>Welcome to Crypto News Blog – your trusted destination for daily insights into the ever-evolving world of cryptocurrency and blockchain...</p>
     </section>
-
     <section id="tech">
       <h2>Tech</h2>
-      <p>The blockchain space is evolving at lightning speed. We cover the latest in crypto wallets, decentralized protocols, zero-knowledge proofs, smart contract security, and emerging tools driving the development of decentralized apps (dApps). Discover the tools that power the future of tech.</p>
+      <p>The tech section is dedicated to breakthroughs in blockchain development...</p>
     </section>
-
     <section id="finance">
       <h2>Finance</h2>
-      <p>With the rise of DeFi (Decentralized Finance), the world of investing is transforming. Explore how yield farming, staking, algorithmic stablecoins, and decentralized exchanges are replacing traditional banks. We cover how to earn passive income through liquidity mining and cross-chain protocols.</p>
+      <p>Crypto finance represents a revolutionary shift in how we interact with money...</p>
     </section>
-
     <section id="crypto">
       <h2>Crypto</h2>
-      <p>Get in-depth reviews and expert commentary on the latest coins and tokens. From Bitcoin to obscure altcoins, we analyze tokenomics, governance models, and long-term value potential. Learn what’s hot, what’s hype, and what to watch out for in today’s volatile market.</p>
+      <p>This section focuses on digital assets and their underlying fundamentals...</p>
     </section>
-
     <section id="web3">
       <h2>Web3</h2>
-      <p>Web3 is redefining ownership and identity. Learn how wallets like MetaMask empower users, how DAOs (Decentralized Autonomous Organizations) are reshaping governance, and how creators monetize content through tokenized experiences. Explore the tech stack of tomorrow’s decentralized web.</p>
+      <p>Web3 is about empowering individuals. We cover the decentralization of identity, data ownership, and community governance...</p>
     </section>
-
     <section id="about">
       <h2>About</h2>
-      <p>Crypto News Blog was founded by a team of passionate developers, traders, and journalists to share unbiased, educational, and actionable crypto content. We believe in transparency, independence, and the power of community to shape the future of finance.</p>
+      <p>Crypto News Blog is built by a group of passionate blockchain believers and financial analysts...</p>
     </section>
-
     <section id="latest">
       <h2>🔍 Latest News</h2>
-      <p>Stay updated with breaking headlines, regulatory changes, and the latest funding rounds in crypto. We provide real-time coverage of hacks, partnerships, and token launches so you can make informed decisions fast. Our editorial team scans the blockchain 24/7 for the most relevant news.</p>
+      <p>Our latest news section tracks global crypto developments in real-time...</p>
     </section>
-
     <section id="investing">
       <h2>💰 Investing</h2>
-      <p>Crypto investing requires strategy and discipline. Learn how to build diversified portfolios, time the market cycles, and analyze charts using technical indicators like RSI, MACD, and Fibonacci retracements. Understand risk management and avoid emotional trading traps.</p>
+      <p>Investing in crypto can be both rewarding and risky...</p>
     </section>
-
     <section id="blockchain">
       <h2>🌐 Blockchain</h2>
-      <p>Blockchain is more than just crypto. We explore use cases in supply chains, voting systems, real estate, and digital identity. Learn about Layer 1 vs Layer 2 solutions, sidechains, sharding, and how scaling solutions like Optimism and Arbitrum improve Ethereum’s performance.</p>
+      <p>This section goes beyond the surface to explore how blockchain is transforming industries...</p>
     </section>
-
     <section id="nft">
       <h2>🖼️ NFT</h2>
-      <p>Non-fungible tokens are revolutionizing art, gaming, and digital ownership. Discover top NFT marketplaces like OpenSea and Blur, explore blue-chip projects, and learn how NFT royalties empower creators. We also cover metaverse integrations and the legal side of digital assets.</p>
+      <p>NFTs are more than collectibles — they are digital primitives for art, culture, and commerce...</p>
     </section>
   </div>
 
   <footer>
     © 2025 CryptoNews Blog | Built with ❤️ and GitHub Pages
   </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
 </body>
 </html>
